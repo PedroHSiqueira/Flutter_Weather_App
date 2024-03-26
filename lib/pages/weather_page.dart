@@ -12,7 +12,7 @@ class WeatherPage extends StatefulWidget {
 
 class _WeatherPageState extends State<WeatherPage> {
   //chave da API
-  final _weatherService = WeatherService("74c4bd19d03c8bfb18e29696324302d5");
+  final _weatherService = WeatherService("6d349339ce1cb85997a438fc625aaa0f");
   Weather? _weather;
 
   //Buscar o clima
@@ -37,7 +37,7 @@ class _WeatherPageState extends State<WeatherPage> {
     if(mainCondition == null) return "assets/sunny.json";
 
     switch( mainCondition.toLowerCase()){
-      case "couds":
+      case "clouds":
       case "mist":
       case "smoke":
       case "haze":
